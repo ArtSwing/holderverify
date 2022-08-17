@@ -36,7 +36,7 @@ initContract();
 // https://discord.com/api/oauth2/authorize?client_id=963338592489472010&redirect_uri=http%3A%2F%2Flocalhost%3A53134&response_type=code&scope=identify
 console.log(
   "discord ouath2 link",
-  "https://discord.com/api/oauth2/authorize?client_id=1007657826065330296&redirect_uri=https%3A%2F%2Flocalhost%3A53134&response_type=code&scope=identify"
+  "https://discord.com/api/oauth2/authorize?client_id=1007657826065330296&redirect_uri=http%3A%2F%2Ficefren.cafe24app.com&response_type=code&scope=identify"
 );
 
 const app = express();
@@ -117,5 +117,5 @@ app.post("/api_wallet", async (request, response) => {
 });
 
 app.listen(port, () =>
-  console.log(`App listening at http://localhost:${port}`)
+  console.log(`App listening at http://icefren.cafe24app.com:${port}`)
 );
